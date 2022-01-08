@@ -1,11 +1,10 @@
 import React from "react";
 import unsplash from "../api/unsplash.js";
-import dotenv from "dotenv";
+
 import "semantic-ui-css/semantic.min.css";
 import SearchBar from "./SearchBar.js";
 import ImageList from "./ImageList.js";
 
-dotenv.config({ path: "./config/config.env" });
 class App extends React.Component {
   state = {
     images: [],
